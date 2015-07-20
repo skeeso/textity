@@ -4,12 +4,12 @@
 // ini_set("display_errors", 1);
 
 // "HOSTNAME" "USERNAME" "PASSWORD"
-$mysqli = new mysqli("localhost", "ad_e65297c73371c", "MyMtHgChF4tDyV4", "ad_e65297c73371c");
+$mysqli = new mysqli("localhost", "", "", "");
 if (!$mysqli) {
     echo "01: Failed to connect to MySQL: " . mysqli_connect_error();
 }
 // "DATABASE NAME"
-if (! mysqli_select_db($mysqli,"ad_e65297c73371c") ) {
+if (! mysqli_select_db($mysqli,"") ) {
     echo "02: Failed to connect to MySQL: " . mysqli_connect_error();
 }
 ?>
